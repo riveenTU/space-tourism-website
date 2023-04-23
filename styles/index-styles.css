@@ -1,0 +1,451 @@
+
+/* Navigation Bar */
+.logo{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 24px;
+}
+.primary-navigation{
+    gap: 8rem;
+    position: absolute;
+    width: 830px;
+    height: 96px;
+    right: 0px;
+    top: 0px;
+
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);   
+}
+.primary-navigation ul{
+    margin: 38px auto;
+    padding-left: 123px;
+}
+.navigation-bar{
+    position: absolute;
+    width: 96.18%;
+    height: 96px;
+    left: 55px;
+    top: 4.44%;
+}
+.nav-text{
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+}
+.nav-text:hover{
+    border-bottom: 3px solid #8a8b90;
+    padding-bottom: 35px;
+}
+.nav-text-margin{
+    margin-right: 48px;
+}
+.nav-text-current{
+    border-bottom: 3px solid white;
+    padding-bottom: 35px;
+}
+.nav-text-current:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 35px;
+}
+
+/* Body text */
+.big-text{
+    color: white;
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    margin: 20px 0px;
+}
+.medium-text{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+}
+.small-text{
+    color: #D0D6F9;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+.main-para{
+    position: absolute;
+    width: 450px;
+    height: 382px;
+    left: 11.5%;
+    top: 43%;
+}
+
+/* Explore Button */
+.lg-button{
+    position: absolute;
+    width: 274px;
+    height: 274px;
+    left: 69.5%;
+    top: 55%;
+
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 37px;
+    background-color: #fff;
+    color: #0B0D17;
+    text-decoration: none;
+
+    display: grid;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    place-items: center;
+    /* z-index: 1; */
+}
+.lg-button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.1;
+    transition: transform 500ms ease-in-out;
+}
+.lg-button:hover::after{
+    transform: scale(1.5);
+}
+
+/*************************** Destination *****************************/
+
+.heading{
+    position: absolute;
+    left: 11.56%;
+    top: 23.56%;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.headingNumber{
+    opacity: 0.5;
+}
+.image-destination{
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    left: 16%;
+    top: 38.11%;
+}
+.destination-title{
+    font-family: 'Bellefair', serif;
+    /* font-style: normal;
+    font-weight: 400; */
+    font-size: 100px;
+    line-height: 115px;
+    
+    margin-top: 37px;
+    margin-bottom: 14px;
+}
+.destination-main-para{
+    position: absolute;
+    width: 445px;
+    height: 472px;
+    right: 11.32%;
+    top: 34.45%;
+}
+hr{
+    margin-top: 54px;
+    border-color: #383B4B;
+}
+.small-boxes{
+    display: inline-block;
+    width: 180px;
+    height: 61px; 
+}
+.small-box-heading{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+
+    color: #D0D6F9;
+}
+.small-box-text{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    margin-top: 12px;
+}
+.nav-destination{
+    width: 303px;
+    height: 34px;
+    padding: 0;
+}
+.nav-destination li{
+    display: inline;
+    margin-right: 17.5px;
+    
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 23px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+}
+.nav-destination li:hover{
+    opacity: 50%;
+    border-bottom: 3px solid #8a8b90;
+    padding-bottom: 12px;
+}
+#current-pg{
+    color: white;
+    border-bottom: 3px solid white;
+    padding-bottom: 12px;
+}
+#current-pg:hover{
+    opacity: 100%;
+}
+.nav-destination a{
+    text-decoration: none;
+    color: #D0D6F9;
+}
+
+/*************************** Crew ****************************/
+
+.image-crew-commander{
+    position: absolute;
+    width: 568.07px;
+    height: 712px;
+    left: 51.04%;
+    top: 22%;
+}
+.crew-small-heading{
+    position: absolute;
+    width: 319px;
+    height: 37px;
+    left: 11.493%;
+    top: 44.445%;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.crew-large-heading{
+    position: absolute;
+    width: 614px;
+    height: 64px;
+    left: 11.5%;
+    top: 46.5%;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.crew-body{
+    position: absolute;
+    width: 444px;
+    height: 128px;
+    left: 11.46%;
+    top: 60.34%;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+
+    color: #D0D6F9;
+}
+.image-crew-specialist{
+    position: absolute;
+    width: 453.44px;
+    height: 654px;
+    left: 55.56%;
+    top: 27.34%;
+}
+.image-crew-pilot{
+    position: absolute;
+    width: 554.39px;
+    height: 681px;
+    left: 51.6%;
+    top: 27.34%;
+}
+.image-crew-engineer{
+    position: absolute;
+    width: 615.57px;
+    height: 607px;
+    left: 51%;
+    top: 32.64%;
+}
+.crew-navigation{
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.17;
+}
+.crew-navigation:hover{
+    opacity: 50%;
+}
+.crew-navigation-box{
+    position: absolute;
+    width: 145px;
+    height: 15px;
+    left: 11.6%;
+    top: 87.89%;
+}
+.crew-navigation-margin{
+    margin-right: 24px;
+}
+.crew-navigation-current{
+    opacity: 100%;
+}
+.crew-navigation-current:hover{
+    opacity: 100%;
+}
+
+/****************************** Technology *******************************/
+
+.technology-image{
+    position: absolute;
+    width: 515px;
+    height: 527px;
+    right: 0;
+    top: 30.23%;
+}
+.technology-small-heading{
+    position: absolute;
+    height: 19px;
+    left: 0;
+    top: 0;
+    margin: 0;
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+
+    color: #D0D6F9;
+}
+.technology-big-heading{
+    position: absolute;
+    height: 64px;
+    left: 0;
+    top: 30px;
+    margin: 0;
+
+    font-family: 'Bellefair', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+
+    color: #FFFFFF;
+}
+.technology-text{
+    position: absolute;
+    height: 192px;
+    width: 444px;
+    left: 0;
+    top: 111px;
+    margin: 0;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+
+    color: #D0D6F9;
+}
+.technology-body{
+    position: absolute;
+    width: 470px;
+    height: 303px;
+    left: 22.6%;
+    top: 42.56%;
+}
+.technology-navigation-box{
+    position: absolute;
+    width: 80px;
+    height: 304px;
+    top: 42.6%;
+    left: 11.5%;
+}
+.technology-navigation{
+    display: grid;
+    text-decoration: none;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: black;
+    place-items: center;
+    /* border: 100px;
+    border-color: white; */
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+}
+.technology-navigation:hover{
+    opacity: 50%;
+}
+.technology-navigation-center{
+    margin: 32px auto;
+}
+.technology-navigation-current{
+    background-color: white;
+    color: black;
+}
+.technology-navigation-current:hover{
+    opacity: 100%;
+}
+
+p{
+    color: white;
+}
